@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.contedorTexto {
+    display: grid;
+    grid-template-columns: 40px 150px 60px 130px;
+    gap: 2px;
+    
+    
+}
+
+.contenedorInput {
+    display: grid;
+    grid-template-columns: 40px 150px 60px 130px;
+    gap: 2px;
+    
+}

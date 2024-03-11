@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/estilos.css">
+    <title>Costos</title>
+</head>
+<body>
+    
+    <main>
+        <h1>Formulario de Costos</h1>
+        <div class="contedorTexto">
+            <p>id</p>
+            <p>producto</p>
+            <p>cantidad</p>
+            <p>unidad</p>
+        </div>
+        <div class="contenedorInput" id="contenedorPadre">  
+            <div class="contenedorInput" id="contenedorInput">
+                <input type="number" name="idProducto" class="idProducto producto" readonly value=1>
+                <input type="text" class="producto" name="producto"> 
+                <input type="number" class="producto" name="cantidad">
+                <select class="producto" name="unidad">
+                    <option>eliga una medida</option>
+                    <option value="gramos">gramos</option>
+                    <option value="kilos">kilos</option>
+                    <option value="mililitros">mililitros</option>
+                    <option value="litros">litros</option>
+                    <option value="unidad">unidad</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <button id="btnAgregar">Agregar otro item</button>
+            <button>Generar costo</button>
+        </div>
+    </main>
+    <script src="/js/crearItem.js"></script>
+    <script src="/js/guardarDatos.js"></script>
+</body>
+</html>
