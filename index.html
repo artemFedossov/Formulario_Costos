@@ -8,7 +8,6 @@
     <title>Costos</title>
 </head>
 <body>
-    
     <main>
         <h1>Formulario de Costos</h1>
         <div class="contedorTexto">
@@ -23,7 +22,6 @@
                 <input type="text" class="producto" name="producto"> 
                 <input type="number" class="producto" name="cantidad">
                 <select class="producto" name="unidad">
-                    <option>eliga una medida</option>
                     <option value="gramos">gramos</option>
                     <option value="kilos">kilos</option>
                     <option value="mililitros">mililitros</option>
@@ -34,7 +32,9 @@
         </div>
         <div>
             <button id="btnAgregar">Agregar otro item</button>
-            <button>Generar costo</button>
+            <a href="secundaHoja.html">
+                <button id="btnSiguiente">Siguiente</button>
+            </a>
         </div>
     </main>
     <script src="/js/crearItem.js"></script>

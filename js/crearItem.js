@@ -1,12 +1,11 @@
 const idProductos = document.querySelectorAll(".idProducto");
-const contenedorInput = document.querySelectorAll(".producto")
+const contenedorInput = document.querySelectorAll(".producto");
 const btnAgregar = document.getElementById("btnAgregar");
+const btnSiguiente = document.getElementById("btnSiguiente");
 const contenedorOriginal = document.getElementById("contenedorInput");
 const contenedorPadre = document.getElementById("contenedorPadre");
 
-console.log(contenedorInput)
-const arreglo = [...contenedorInput]
-console.log(arreglo[0].value)
+const arreglo = [...contenedorInput];
 
 btnAgregar.addEventListener('click', function() {
     
@@ -24,9 +23,15 @@ btnAgregar.addEventListener('click', function() {
     
     for(let clave in arreglo) {
         if(clave == 1 || clave == 2)
-        arreglo[clave].value = ""
+        arreglo[clave].value = "";
     }
 });
+
+btnSiguiente.addEventListener('click', function() {
+
+    
+});
+
 
 
 
