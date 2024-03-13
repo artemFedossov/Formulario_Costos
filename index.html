@@ -17,7 +17,7 @@
             <p>valor</p>
             <p>cantidad</p>
         </div>
-        <form class="contenedorForm" action="">
+        <form id="formulario" class="contenedorForm" action="">
             <input id="nombreProducto" type="text" required>
             <input id="cantidadProducto" type="number" required>
             <select id="unidadProducto" name="unidades" required>
@@ -31,8 +31,8 @@
             <input id="valorProducto" type="number" required>
             <input id="cantidadComprada" type="number" required>
             <div id="contenedorLista"></div>
-            <input id="btnAgregar" type="submit" value="agregar">
-            <input id="btnGenerar" type="submit" value="generar">
+            <button type="submit" form="formulario">agregar</button>
+            <button id="btnGenerar" type="button">generar</button>
         </form>
         
     </main>
