@@ -5,15 +5,21 @@ main {
 
 .contedorTexto {
     display: grid;
-    grid-template-columns: 40px 150px 60px 130px;
+    grid-template-columns: repeat(5, 100px);
     gap: 2px;
     
     
 }
 
-.contenedorInput {
+.contenedorForm {
     display: grid;
-    grid-template-columns: 40px 150px 60px 130px;
+    grid-template-columns: repeat(5, 100px);
     gap: 2px;
     
+}
+
+  
+/* En la segunda fila, solo queremos dos columnas */
+.contenedorForm > :nth-child(n+6) {
+    grid-column: span 5; /* Las celdas desde el sexto elemento en adelante ocupan dos columnas */
 }

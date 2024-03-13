@@ -11,33 +11,31 @@
     <main>
         <h1>Formulario de Costos</h1>
         <div class="contedorTexto">
-            <p>id</p>
             <p>producto</p>
             <p>cantidad</p>
             <p>unidad</p>
+            <p>valor</p>
+            <p>cantidad</p>
         </div>
-        <div class="contenedorInput" id="contenedorPadre">  
-            <div class="contenedorInput" id="contenedorInput">
-                <input type="number" name="idProducto" class="idProducto producto" readonly value=1>
-                <input type="text" class="producto" name="producto" value="hola"> 
-                <input type="number" class="producto" name="cantidad">
-                <select class="producto" name="unidad">
-                    <option value="gramos">gramos</option>
-                    <option value="kilos">kilos</option>
-                    <option value="mililitros">mililitros</option>
-                    <option value="litros">litros</option>
-                    <option value="unidad">unidad</option>
-                </select>
-            </div>
-        </div>
-        <div>
-            <button id="btnAgregar">Agregar otro item</button>
-            <a href="secundaHoja.html">
-                <button id="btnSiguiente">Siguiente</button>
-            </a>
-        </div>
+        <form class="contenedorForm" action="">
+            <input id="nombreProducto" type="text" required>
+            <input id="cantidadProducto" type="number" required>
+            <select id="unidadProducto" name="unidades" required>
+                <option value="">seleccionar</option>
+                <option value="gramos">gramos</option>
+                <option value="kilogramos">kilogramos</option>
+                <option value="mililitros">mililitros</option>
+                <option value="litros">litros</option>
+                <option value="unidades">unidades</option>
+            </select>
+            <input id="valorProducto" type="number" required>
+            <input id="cantidadComprada" type="number" required>
+            <div id="contenedorLista"></div>
+            <input id="btnAgregar" type="submit" value="agregar">
+            <input id="btnGenerar" type="submit" value="generar">
+        </form>
+        
     </main>
     <script src="/js/crearItem.js"></script>
-    <script src="/js/guardarDatos.js"></script>
 </body>
 </html>

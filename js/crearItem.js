@@ -18,16 +18,18 @@ function Productos(id, producto, cantidad, unidad) {
 
 let aux = [];
 let listaProductos = [];
+let producto;
 
 btnAgregar.addEventListener('click', function() {
     
-    contenedorInput.forEach(function(elemento, indice) {
+    contenedorInput.forEach((elemento) => {
         
         let x = elemento.value
         aux.push(x);
+        console.log("variable" +aux)
     })
-
-    const producto = new Productos(aux[0], aux[1], aux[2], aux[3])
+    
+    producto = new Productos(aux[0], aux[1], aux[2], aux[3])
     
     listaProductos.push(producto);
 
