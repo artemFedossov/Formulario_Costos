@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="/style/estilos.css">
     <title>Costos</title>
 </head>
@@ -18,24 +19,26 @@
             <p>cantidad</p>
         </div>
         <form id="formulario" class="contenedorForm" action="">
-            <input id="nombreProducto" type="text" required>
-            <input id="cantidadProducto" type="number" required>
-            <select id="unidadProducto" name="unidades" required>
-                <option value="">seleccionar</option>
-                <option value="gramos">gramos</option>
-                <option value="kilogramos">kilogramos</option>
-                <option value="mililitros">mililitros</option>
-                <option value="litros">litros</option>
-                <option value="unidades">unidades</option>
+            <input id="nombreProducto" class="estiloInput" type="text" required>
+            <input id="cantidadProducto" class="estiloInput" type="number" required>
+            <select id="unidadProducto" class="estiloInput" name="unidades" required>
+                <option value="">Seleccionar</option>
+                <option value="gramos">Gramos</option>
+                <option value="kilogramos">Kilogramos</option>
+                <option value="mililitros">Mililitros</option>
+                <option value="litros">Litros</option>
+                <option value="unidades">Unidades</option>
             </select>
-            <input id="valorProducto" type="number" required>
-            <input id="cantidadComprada" type="number" required>
+            <input id="valorProducto" class="estiloInput" type="number" required>
+            <input id="cantidadComprada" class="estiloInput" type="number" required>
+            <!-- Contenedor dinamico en donde se agregar productos -->
             <div id="contenedorLista"></div>
-            <button type="submit" form="formulario">agregar</button>
-            <button id="btnGenerar" type="button">generar</button>
+            <button type="submit" form="formulario" class="btn">agregar</button>
+            <button id="btnGenerar" class="btn" type="button">generar</button>
         </form>
         
     </main>
+    <!-- Script para la funcionalidad de JS -->
     <script src="/js/crearItem.js"></script>
 </body>
 </html>
