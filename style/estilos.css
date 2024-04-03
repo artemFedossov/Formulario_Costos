@@ -20,11 +20,31 @@ main {
     border-radius: 20px;
 }
 
+
+/*cambia el color de main*/
+main.cambioColor {
+    background-color: #87cefa;    
+}
+
+/*contenedor que contiene el titulo y el cambio de color del body*/
+.contenedorTitulo {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Se establece el estilo para el titulo del documento */
 h1 {
     font-size: 2rem;
     padding: 10px 10px;
     color: #333333;
+}
+
+/*estilo del boton para cambiar de color*/
+.colorBody {
+    border: none;
+    border-radius: 2px;
+    margin: 10px;
+    padding: 5px;
 }
 
 /* Estilos para el contenedor del texto, se aplico grid para organizar los elementos */

@@ -1,6 +1,7 @@
 // Selección de los elementos del DOM
 const btnAgregar = document.querySelector("#formulario");
 const btnGenerar = document.querySelector("#btnGenerar");
+const btnCambioColor = document.querySelector("#btnColor");
 
 const contenedorLista = document.querySelector("#contenedorLista");
 const producto = document.querySelector("#nombreProducto");
@@ -9,6 +10,7 @@ const unidadProducto = document.querySelector("#unidadProducto");
 const valorProducto = document.querySelector("#valorProducto");
 const cantidadComprada = document.querySelector("#cantidadComprada");
 const contenedorFormulario = document.querySelector("#formulario")
+const colorLS = localStorage.getItem("modoColor");
 
 // Agrega eventos a los botones
 btnAgregar.addEventListener("submit", agregarProductos);
@@ -78,4 +80,19 @@ function calcular() {
     }
 }
 
+// Se fija en el local storage cual fue el ultimo color utilizado
+if(colorLS === "celeste"){
+    document.querySelector('main').classList.add("cambioColor");
+}
+
+// Evento sobre el boton que cambia el color del main 
+btnCambioColor.addEventListener("click", () => {
+    document.querySelector('main').classList.toggle("cambioColor");
+
+    if(document.querySelector('main').classList.contains("cambioColor")){
+        localStorage.setItem("modoColor", "celeste");
+    } else {
+        localStorage.setItem("modoColor", "rosa");
+    }
+})
 
